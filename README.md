@@ -35,6 +35,12 @@ Single-factor security systems (face-only, fingerprint-only, or PIN-only) are vu
 6. **Logging**
    Every attempt (user, timestamp, stage, result) is logged to a local **SQLite3 database** via a lightweight **Flask** server for later review.
 
+## System Architecture
+
+![System Architecture Diagram](./architecture-diagram.png)
+
+*The Raspberry Pi 4 sits at the center, coordinating the face camera, IR temperature sensor, fingerprint sensor, keypad, IR LED, relay, and solenoid lock.*
+
 ## Hardware Used
 
 - Raspberry Pi 4 (4GB RAM)
@@ -75,7 +81,15 @@ python triple_auth.py
 
 ## Demo
 
-Demo videos of the system in action:
+**Successful authentication run (terminal output):**
+
+![Terminal success demo](./terminal-success-demo.png)
+
+**Email alert on repeated failure:**
+
+![Email alert demo](./email-alert-demo.png)
+
+Full video demos:
 - [Video 1](./Video1.mp4)
 - [Video 2](./Video2.mp4)
 
