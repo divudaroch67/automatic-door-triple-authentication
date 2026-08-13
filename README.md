@@ -97,6 +97,10 @@ Full video demos:
 
 A detailed write-up of the project, including design decisions and testing, is available in [formal project report.pdf](./formal%20project%20report.pdf).
 
+## Presentation
+
+The project's presentation slides are available in [presentation.pptx](./presentation.pptx).
+
 ## Future Improvements
 
 - Mobile app / push notification integration for alerts
